@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { AuthProvider } from "@/contexts/AuthContext";
+import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/index";
 import SignIn from "./pages/Signin";
 import Register from "./pages/Register";
@@ -33,6 +34,7 @@ const App = () => (
           <ToastProvider />
           <Sonner />
           <BrowserRouter>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/signin" element={<SignIn />} />

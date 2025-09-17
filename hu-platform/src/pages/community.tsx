@@ -71,9 +71,11 @@ const Community = () => {
               </div>
 
               <div className="p-6 bg-secondary/20">
+              <a href="https://discord.gg/xcNNqdDhce">
                 <Button variant="hero" className="w-full">
                   Join Community Discord
                 </Button>
+              </a>
               </div>
             </div>
           </div>
